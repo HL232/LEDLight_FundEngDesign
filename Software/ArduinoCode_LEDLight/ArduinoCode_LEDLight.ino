@@ -1,5 +1,5 @@
-#define button_pin 7 //The push button is on pin 7
-#define led_pin 3 //The LED is on PWM pin 3
+#define button_pin 12 //The push button is on pin 7
+#define led_pin 9 //The LED is on PWM pin 3
 #define blinkTime 250 //Blink time
 #define annoyingLight 13 //This is just to turn off the built in LED
 
