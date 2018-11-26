@@ -58,24 +58,16 @@ void set_LED_state(){
   }
 }
 
-void myInterrupt(){
-    while (pushState == 0) {
-    pushState = digitalRead(button_pin); //This is used to break out of the while loop and back into the main loop
-  }
-}
 void brightest() {
   analogWrite(led_pin, 255);  //Brightest. AnalogWrite has built in PWM
-  myInterrupt();
 }
 
 void intermediate() {
   analogWrite(led_pin, 75);  //Intermediate
-  myInterrupt();
 }
 
 void dimmest() {
   analogWrite(led_pin, 10);  //least bright
-  myInterrupt();
 }
 
 void flashing() {
