@@ -1,5 +1,5 @@
-#define button_pin 12 //The push button is on pin 7
-#define led_pin 9 //The LED is on PWM pin 3
+#define button_pin 12 //The push button is on pin 12
+#define led_pin 9 //The LED is on PWM pin 9
 #define blinkTime 250 //Blink time
 #define annoyingLight 13 //This is just to turn off the built in LED
 
@@ -23,14 +23,22 @@ void setup() {
 }
 
 void loop() {
-  //Keep track of the previous state of the button. Records when the button is released. Add 1 to the counter for every button push
+  button_push();
+  set_LED_state();
+}
+
+void button_push(){
+    //Keep track of the previous state of the button. Records when the button is released. Add 1 to the counter for every button push
   prevPushState = pushState;
   pushState = digitalRead(button_pin);
   if (prevPushState > pushState) {
     pushStateCount++;
   }
   modSwitchState = pushStateCount % 5;
-  //Use mod division to keep track of which state. 0 = led off, 1 = bright, 2 = intermediate, 3 = dim, 4 = blinking
+}
+
+void set_LED_state(){
+    //Use mod division to keep track of which state. 0 = led off, 1 = bright, 2 = intermediate, 3 = dim, 4 = blinking
   switch (modSwitchState){
     case 0:
       analogWrite(led_pin, 0); //Off
@@ -49,6 +57,7 @@ void loop() {
       break;
   }
 }
+
 void myInterrupt(){
     while (pushState == 0) {
     pushState = digitalRead(button_pin); //This is used to break out of the while loop and back into the main loop
