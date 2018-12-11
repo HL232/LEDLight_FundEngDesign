@@ -1,0 +1,1 @@
+This folder contains datasheets for the various components I used. Some may not be the exact same model (eg: Resistors may not be the exact same as the resistors I used, but resistors are pretty basic, I think you won't need to reference the datasheet for that one)
