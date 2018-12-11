@@ -1,3 +1,5 @@
+https://photos.app.goo.gl/saTWxsfEm9hphPUx9
+
 # Design Skills Project (Variable Light Intensity)
 
 ## Functional Specifications
