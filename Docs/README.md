@@ -1,3 +1,1 @@
-This folder contains video demos of the various versions of my device. A few of the videos are too large to upload directly to Github. Please use this link to access the videos on Google drive:
-https://drive.google.com/open?id=1ps2H23thdWqEvZtKWwpBxWNLJy_VrJ47 
-
+This folder contains datasheets for the various components I used. Some may not be the exact same model (eg: Resistors may not be the exact same as the resistors I used, but resistors are pretty basic, I think you won't need to reference the datasheet for that one)
