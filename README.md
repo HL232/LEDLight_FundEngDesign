@@ -5,6 +5,8 @@ This is a link to the demo of my LED light project:
 
 https://photos.app.goo.gl/saTWxsfEm9hphPUx9
 
+tl;dr - The LED light works, the longest dimension is 5.5 inches, the device weighs 6.8 oz, and it does survive a drop test
+
 ## Background
 
 Hello, welcome to my repo for my LED light project for my BME590 Fundamentals of Engineering Design class. 
